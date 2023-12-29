@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: saddlebrown;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 50px;
+    font-size: 45px;
+    color: beige;
+}
+
+.casa {
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.tabuleiro {
+    text-align: center;
+}
+
+/* AFFTER PEGA O ULTIMO FILHO DAQUELE ELEMENTO - ESTAMOS UTILIZANDO AQUI PARA INSERIR O CONTENT */
+.o:after {
+    position: absolute;
+    content: "\1F6E1";
+    font-size: 80PX;
+    line-height: 100PX;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* position: absolute;            
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+}
+.x:after {
+    position: absolute;
+    content: "\2694";
+    font-size: 80PX;
+    line-height: 100PX;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* position: absolute;            
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+}
+input{
+    color: white;
+    position: absolute;
+    margin: 30px 0px;
+    border: none;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: chocolate;
+    right: 50%;
+    transform: translate(50%);
+
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;}
